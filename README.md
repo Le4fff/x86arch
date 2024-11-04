@@ -20,19 +20,27 @@ For the 8086 you have 4 general 16-bit registers being (AX,BX,CX,DX)
 Each of the registers have 8 "high" bits and 8 "low" bits, "low" being less inportant (significant) than the "high" bits
 
 The ISA makes it possible to refer to the low bits and high bits individually
+
 (AH,AL| BH,BL| CH,CL| DH,DL)
 
 XH and XL registers can be used as -1 byte registers to store 1-byte quantities
+
  -(Important) Both are "tied" to the 16-bit register
+ 
   -Changing the value of AX will change the value of AH and AL
+  
    -Changing the value of AH or AL will change the value of AX
+   
 
 *Two 16-bit registers*
  SI      |      DI
 
 These are basically general-purpose registers 
+
  -But by convention they are often used as "pointers" (I.E they hold addresses)
+ 
   -and they *cannot* be decompressed into "high" or "low" 1-byte registers
+  
 
 Two special 16-bit registers:
 
