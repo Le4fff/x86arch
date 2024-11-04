@@ -35,26 +35,37 @@ These are basically general-purpose registers
   -and they *cannot* be decompressed into "high" or "low" 1-byte registers
 
 Two special 16-bit registers:
+
  -BP: Base Pointer
+ 
   -SP: Stack Pointer
+  
     (Will be written in-depth later)
 
 Four 16-bit segment registers
+
  -CS: Code Segment
+ 
   -DS: Data Segment
+  
    -SS: Stack Segment
+   
     -ES: Extra Segment
      (will be talked about later but wont be used much)
 
 The 16-bit instruction pointer (IP) register:
+
  -Points to the next instruction to execute
+ 
   -Never really used directly when writing assembly code
 
 The 16-bit FLAGS registers
+
  -Information is stored in individual bits of the FLAGS register
+ 
   -Whenever an instruction is executed and produces a result, It can modify some bit(s) of the FLAGS register
-   -EXAMPLE: Z (or ZF) denotes one bit of the FLAGS register, which is set to "1" if the previously executed instruction produced "0" or "0" overwise
-    -Lots of use (the FLAGS register)
+  
+   -EXAMPLE: Z (or ZF) denotes one bit of the FLAGS register, which is set to "1" if the previously executed instruction produced "0" or "0" overwise and lots of use (the FLAGS register)
 
     |    AH  |  |   AL  | = AX
     |    BH  |  |   BL  | = BX
@@ -91,9 +102,16 @@ The 16-bit FLAGS registers
        Control unit
 
 As mentioned above, There are several registers that are used for holding addresses for memory locations
+
 -Segments (CS,DS,SS,ES)
+
  -Pointers:
+ 
  SI,DI: indices (Typically used for pointers)
+ 
  SP: Stack Pointer
+ 
  BP: (Stack) Base pointer
+ 
  IP: Pointer to next instruction
+ 
