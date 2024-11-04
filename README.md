@@ -23,7 +23,7 @@ The ISA makes it possible to refer to the low bits and high bits individually
 
 (AH,AL| BH,BL| CH,CL| DH,DL)
 
-XH and XL registers can be used as -1 byte registers to store 1-byte quantities
+**XH and XL registers can be used as -1 byte registers to store 1-byte quantities**
 
  -(Important) Both are "tied" to the 16-bit register
  
@@ -35,14 +35,14 @@ XH and XL registers can be used as -1 byte registers to store 1-byte quantities
 *Two 16-bit registers*
  SI      |      DI
 
-These are basically general-purpose registers 
+**These are basically general-purpose registers** 
 
  -But by convention they are often used as "pointers" (I.E they hold addresses)
  
   -and they *cannot* be decompressed into "high" or "low" 1-byte registers
   
 
-Two special 16-bit registers:
+**Two special 16-bit registers:**
 
  -BP: Base Pointer
  
@@ -50,7 +50,7 @@ Two special 16-bit registers:
   
     (Will be written in-depth later)
 
-Four 16-bit segment registers
+**Four 16-bit segment registers**
 
  -CS: Code Segment
  
@@ -61,13 +61,13 @@ Four 16-bit segment registers
     -ES: Extra Segment
      (will be talked about later but wont be used much)
 
-The 16-bit instruction pointer (IP) register:
+**The 16-bit instruction pointer (IP) register:**
 
  -Points to the next instruction to execute
  
   -Never really used directly when writing assembly code
 
-The 16-bit FLAGS registers
+**The 16-bit FLAGS registers**
 
  -Information is stored in individual bits of the FLAGS register
  
@@ -109,7 +109,7 @@ The 16-bit FLAGS registers
          ^        v
        Control unit
 
-As mentioned above, There are several registers that are used for holding addresses for memory locations
+**As mentioned above, There are several registers that are used for holding addresses for memory locations**
 
 -Segments (CS,DS,SS,ES)
 
