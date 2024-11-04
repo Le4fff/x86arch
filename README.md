@@ -48,7 +48,7 @@ The ISA makes it possible to refer to the low bits and high bits individually
  
   -SP: Stack Pointer
   
-    (Will be written in-depth later)
+  (Will be written in-depth later)
 
 **Four 16-bit segment registers**
 
@@ -58,7 +58,7 @@ The ISA makes it possible to refer to the low bits and high bits individually
   
    -SS: Stack Segment
    
-    -ES: Extra Segment
+  -ES: Extra Segment
      (will be talked about later but wont be used much)
 
 **The 16-bit instruction pointer (IP) register:**
