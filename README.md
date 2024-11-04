@@ -20,5 +20,5 @@ For the 8086 you have 4 general 16-bit registers being (AX,BX,CX,DX)
 Each of the registers have 8 "high" bits and 8 "low" bits, "low" being less inportant (significant) than the "high" bits
 
 The ISA makes it possible to refer to the low bits and high bits individually
-(AH,AL| BH,BL| CH,CL| DH,DL|)
+(AH,AL| BH,BL| CH,CL| DH,DL)
           
