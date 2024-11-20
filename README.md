@@ -125,9 +125,13 @@ The ISA makes it possible to refer to the low bits and high bits individually
  
  **In a 8086 processor, a program iimited to referencing an address space of size 1mb (Thats 2^20 bytes)**
  -therefore, addresses are 20-bit long
+ 
  -A d-bit long address allows to reference 2^d diffrent "things"
+
  -Example:
+ 
   2-bit "00 01 10 11" (4 "things")
+
   3-bit "000 001 010 011 100 101 110 111" (8 "things")
 
   In this case, these things are "bytes" 
